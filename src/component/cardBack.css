@@ -1,0 +1,36 @@
+.card-back {
+    background-image: url(../assets/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 1.82;
+    position: relative;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+
+@media (min-width:40em) {
+    .card-back {
+        width: 447px;
+        max-height: 245px;
+    }
+
+    .cv-number {
+        position: absolute;
+        top: 45.7%;
+        left: 82%;
+    }
+}
+
+@media (max-width:40em) {
+    .card-back {
+        width: 280px;
+    }
+
+    .cv-number {
+        position: absolute;
+        top: 44.25%;
+        left: 78%;
+    }
+}

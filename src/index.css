@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:40em) {
+    #root {
+        background-image: url(assets/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 33.33% 100%;
+    }
+}
+
+@media (max-width:40em) {
+    #root {
+        background-image: url(assets/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100% 33.33%;
+    }
+}

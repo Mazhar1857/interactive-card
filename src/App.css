@@ -1,0 +1,64 @@
+@media (min-width:40em) {
+    .container {
+        width: 1100px;
+        display: grid;
+        /* border: 2px solid red; */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2.5em;
+        grid-template-areas: "front-card form-card"
+            "back-card form-card";
+    }
+
+    .front-card {
+        grid-area: front-card;
+        /* border: 2px solid yellow; */
+        justify-self: flex-start;
+        align-self: flex-end;
+
+    }
+
+    .back-card {
+        grid-area: back-card;
+        /* border: 2px solid yellow; */
+        justify-self: flex-end;
+        align-self: flex-start;
+    }
+
+    .form-card {
+        grid-area: form-card;
+        /* border: 2px solid yellow; */
+        align-self: center;
+        justify-self: center;
+        margin-left: 2em;
+    }
+
+}
+
+@media (max-width:40em) {
+    .container {
+        width: 95%;
+        padding-top: 1.75em;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.85fr 1.05fr 0.85fr 3.7fr;
+    }
+
+    .back-card {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: flex-end;
+    }
+
+    .front-card {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        z-index: 10;
+    }
+
+    .form-card {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}

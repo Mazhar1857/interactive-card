@@ -1,0 +1,107 @@
+.card-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 6px;
+    gap: 1.4em;
+    width: 380px;
+    gap: 1.4em;
+}
+
+.card-form label {
+    color: rgba(88, 82, 93, 1);
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.card-form input {
+    width: 100%;
+    font-family: "Space Grotesk", sans-serif;
+    color: rgba(52, 41, 57, 1);
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 8px;
+    margin: 0.25em 0;
+    font-weight: 600;
+    font-size: 1.2em;
+    height: 40px;
+    padding-left: 0.5em;
+}
+
+.card-form input.out-line {
+    outline: 1px solid red;
+}
+
+.card-form input::placeholder {
+    color: rgb(205, 203, 206);
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.form-exp-date>:nth-child(2) {
+    gap: 0.5em;
+
+}
+
+.card-form .error {
+    font-size: 0.7em;
+    color: red;
+}
+
+.form-exp-cvc {
+    gap: 1em;
+}
+
+.card-form button {
+    padding: 1em;
+}
+
+.card-form input:hover {
+    cursor: pointer;
+}
+
+.card-form input:focus {
+    outline: 1px solid rgba(97, 84, 148, 1);
+    cursor: text;
+}
+
+.form-exp-cvc {
+    display: flex;
+    align-items: center;
+}
+
+.form-exp-date {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-exp-date>:nth-child(2) {
+    display: flex;
+}
+
+.form-cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-form :last-child {
+    width: 100%;
+}
+
+.card-form button {
+    background-color: rgba(34, 9, 48, 1);
+    color: rgba(254, 245, 255, 1);
+    border-radius: 8px;
+}
+
+.card-form button:hover {
+    cursor: pointer;
+}
+
+@media (max-width:40em) {
+    .card-form {
+        width: 100%;
+    }
+}

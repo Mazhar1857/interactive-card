@@ -1,0 +1,63 @@
+.card-front {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    background-image: url(../assets/bg-card-front.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 447px;
+    max-height: 245px;
+    aspect-ratio: 1.82;
+}
+
+
+
+.card-front>:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (min-width:40em) {
+    .front-card-logo {
+        width: 4.75em;
+    }
+
+    .card-number {
+        padding: 2.2em 0 0.5em 0;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    .card-front>:last-child {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width:40em) {
+    .card-front {
+        width: 280px;
+    }
+
+    .front-card-logo {
+        width: 3.75em;
+    }
+
+    .card-number {
+        padding: 2em 0 0.65em 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .card-front>:last-child {
+        font-size: 10px;
+        font-weight: 500;
+    }
+}
