@@ -55,14 +55,14 @@ function App() {
   }, [error, navigate]);
 
 
-  const handleBackButton = (event) => {
-    event.preventDefault();
-    navigate(-1); // Navigate back using the history stack
-    window.removeEventListener('popstate', handleBackButton);
-  }
+  // const handleBackButton = (event) => {
+  //   event.preventDefault();
+  //   navigate(-1); // Navigate back using the history stack
+  //   window.removeEventListener('popstate', handleBackButton);
+  // }
 
 
-  window.addEventListener('popstate', handleBackButton);
+  // window.addEventListener('popstate', handleBackButton);
 
 
 
